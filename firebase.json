@@ -8,8 +8,6 @@
       "firebase-debug.log",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "cleanUrls": true,
-    "trailingSlash": false
+    ]
   }
 }

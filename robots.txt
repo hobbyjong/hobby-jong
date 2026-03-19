@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hobby-jong-20260319.web.app/sitemap.xml
