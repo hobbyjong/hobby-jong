@@ -1,14 +1,112 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <meta name="description" content="취미를 찾아가는 사람들을 위한 감각적인 안내 페이지" />
+  <title>취미를 찾아가는 사람들</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=SUIT:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="./style.css" rel="stylesheet" />
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+  <div class="page-shell">
+    <header class="hero">
+      <nav class="topbar">
+        <span class="brand">Hobby Trail</span>
+        <a href="#explore">지금 둘러보기</a>
+      </nav>
+
+      <div class="hero-copy reveal">
+        <p class="eyebrow">새로운 하루를 여는 가장 사적인 탐험</p>
+        <h1>취미를 찾아가는 사람들</h1>
+        <p class="hero-text">
+          좋아하는 일을 아직 모른다고 해서 늦은 것은 아닙니다.
+          이 페이지는 작은 호기심에서 시작해 나만의 몰입을 발견하는 사람들을 위해 만들어졌습니다.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#cards">취미 둘러보기</a>
+          <a class="button secondary" href="#steps">시작 방법</a>
+        </div>
+      </div>
+
+      <div class="hero-panel reveal delay-1">
+        <p class="panel-label">오늘의 제안</p>
+        <ul>
+          <li><strong>손으로 몰입하기</strong><span>드로잉, 도예, 뜨개, 캘리그래피</span></li>
+          <li><strong>몸으로 환기하기</strong><span>러닝, 클라이밍, 요가, 댄스</span></li>
+          <li><strong>귀와 마음 열기</strong><span>악기 연주, 보컬, LP 감상</span></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section id="cards" class="section reveal">
+        <div class="section-heading">
+          <p class="section-kicker">Curated Entry Points</p>
+          <h2>취향은 발견보다 실험에 가깝습니다</h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="card accent-coral">
+            <span class="card-index">01</span>
+            <h3>만드는 즐거움</h3>
+            <p>결과물이 손에 남는 취미는 작은 성취를 빠르게 만들어 줍니다.</p>
+          </article>
+          <article class="card accent-gold">
+            <span class="card-index">02</span>
+            <h3>움직이는 에너지</h3>
+            <p>몸을 쓰는 취미는 생각을 비우고 생활 리듬을 다시 세웁니다.</p>
+          </article>
+          <article class="card accent-sky">
+            <span class="card-index">03</span>
+            <h3>깊어지는 감각</h3>
+            <p>음악, 향, 사진처럼 감각을 키우는 취미는 일상을 더 선명하게 바꿉니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="explore" class="section split-section reveal delay-1">
+        <div>
+          <p class="section-kicker">Why It Matters</p>
+          <h2>취미는 시간을 소비하는 일이 아니라, 나를 해석하는 방식입니다</h2>
+        </div>
+        <div class="quote-box">
+          <p>
+            한 번의 체험으로 맞는 취미를 찾지 못해도 괜찮습니다. 중요한 건 반복 가능한 즐거움을 찾는 것입니다.
+          </p>
+        </div>
+      </section>
+
+      <section id="steps" class="section steps reveal delay-2">
+        <div class="section-heading">
+          <p class="section-kicker">Three Small Moves</p>
+          <h2>시작은 가볍게, 선택은 분명하게</h2>
+        </div>
+
+        <div class="step-list">
+          <article>
+            <span>하나</span>
+            <h3>30분 체험부터</h3>
+            <p>큰 결심 대신 짧은 체험으로 진입 장벽을 낮추세요.</p>
+          </article>
+          <article>
+            <span>둘</span>
+            <h3>좋았던 감정 기록</h3>
+            <p>재미, 집중, 해방감 중 무엇이 컸는지 메모하면 선택이 빨라집니다.</p>
+          </article>
+          <article>
+            <span>셋</span>
+            <h3>한 달만 반복</h3>
+            <p>취미는 첫인상보다 반복했을 때의 리듬으로 남습니다.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script defer src="./main.js"></script>
 </body>
 </html>
